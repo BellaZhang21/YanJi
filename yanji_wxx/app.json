@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/me/me",
+    "pages/efficiency/efficiency",        
+    "pages/dream/dream",
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5592fb",
+    "navigationBarTextStyle":"white"       
+  }
+}
