@@ -1,0 +1,48 @@
+<!-- 头部个人信息 -->
+<view class='top-info'>
+     <image src='{{bgUrl}}' mode='aspectFill' class='bg'></image> 
+     <view class='user-info'>
+        <image src='{{avatarUrl}}' class='user-avatar' mode='widthFix'></image>
+        <view class='nickname'>{{nickName}}<image src='../../img/male.png' mode='widthFix' class='sex'></image></view>
+        <view class='target'>目标：{{schoolName}}<image src='../../img/write.png' mode='widthFix' class='edit'></image></view>
+     </view>
+</view>
+<!-- 中部选项框 -->
+<view class='item' id='about'>
+    <text class='item-text'>关于研己</text>
+</view>
+
+<view class='mine'>
+  <view id='message' class='item'>
+    <text class='item-text'>消息</text>
+  </view>
+  <view id='store-up' class='item'>
+    <text class='item-text'>我的收藏</text>
+  </view>
+  <view id='invitation-code' class='item'>
+    <text class='item-text'>邀请码</text>
+  </view>
+</view>
+
+<view class='efficient'>
+  <view id='lyubish' class='item'>
+    <text class='item-text'>柳比歇夫时间管理法</text>
+  </view>
+  <view id='tomato' class='item'>
+    <text class='item-text'>番茄效率法</text>
+  </view>
+  <view id='todo' class='item'>
+    <text class='item-text'>To Do List</text>
+  </view>
+</view>
+
+<view id='feeback' class='item'>
+  <text class='item-text'>意见反馈</text>
+</view>
+<view style='height:140rpx'></view>
+<!-- 底部导航栏 -->
+<view class='navigator' bindtap='navClick'>
+    <view id='efficiency' class='nav-bar'>Efficiency</view>
+    <view id='dream' class='nav-bar'>Dream</view>
+    <view id='me' class='nav-bar active'>Me</view>
+</view>
