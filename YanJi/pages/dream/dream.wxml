@@ -1,9 +1,0 @@
-<!--pages/dream/dream.wxml-->
-<text>pages/dream/dream.wxml</text>
-
-<!-- 底部导航栏 -->
-<view class='navigator' bindtap='navClick'>
-    <view id='efficiency' class='nav-bar'>Efficiency</view>
-    <view id='dream' class='nav-bar active'>Dream</view>
-    <view id='me' class='nav-bar'>Me</view>
-</view>
