@@ -32,7 +32,7 @@ Page({
     console.log(app.globalData)
     this.setData({
       avatarUrl: userInfo.avatarUrl,
-      nickName: userInfo.nickname
+      nickName: userInfo.nickNwxab4d0156f88101cdwxab4d0156f88101cdame
     })
   },
 

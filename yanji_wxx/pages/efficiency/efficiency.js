@@ -54,22 +54,20 @@ Page({
     this.setData({
       date: dd
     })
+    // 获取头部图片
     var that = this;
-    wx.request({
-      url: 'http://yanji.aloveu.cn/efficency/head', 
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success: function (res) {
+    wx.getStorage({
+      key: 'banner',
+      success: function(res) {
         console.log(res)
         that.setData({
-          slogan: res.data[0].banner_motto,
-          likenum: res.data[0].banner_point,
-          bannerImage: res.data[0].banner_image,
-          postName: res.data[0].banner_username,
-          postImage: res.data[0].banner_userimage
+          slogan: res.data.banner_motto,
+          likenum: res.data.banner_point,
+          bannerImage: res.data.banner_image,
+          postName: res.data.banner_username,
+          postImage: res.data.banner_userimage
         })
-      }
+      },
     })
   },
   

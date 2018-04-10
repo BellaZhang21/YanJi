@@ -1,9 +1,8 @@
 {
   "pages":[
-    "pages/me/me",
-    "pages/efficiency/efficiency",        
     "pages/dream/dream",
-    
+    "pages/me/me",
+    "pages/efficiency/efficiency",            
     "pages/logs/logs"
   ],
   "window":{

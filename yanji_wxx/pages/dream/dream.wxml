@@ -1,5 +1,21 @@
-<!--pages/dream/dream.wxml-->
-<text>pages/dream/dream.wxml</text>
+<!-- banner -->
+<view class='banner frame'>
+  <image src='{{banner.banner_image}}' mode='widthFix' class='banner-image'></image>
+  <view class='share'>
+      <image src='../../img/fx.png' mode='widthFix' class='share-icon'></image>
+      <view class='share-text'>分享</view>
+  </view>
+</view>
+<!-- info -->
+<view class='frame info'>
+  <view class='self-info'>
+    <image src='{{avatarUrl}}' mode='widthFix' class='avatar'></image>
+    <view>{{name}}</view>
+  </view>
+</view>
+
+
+
 
 <!-- 底部导航栏 -->
 <view class='navigator' bindtap='navClick'>

@@ -1,11 +1,14 @@
 // pages/dream/dream.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    banner:{},
+    avatarUrl:"",
+    name:""
   },
   // 导航条点击事件
   navClick: function (event) {
@@ -24,7 +27,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    // 获取头部图片
+    wx.getStorage({
+      key: 'banner',
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          banner:res.data
+        })
+      },
+    })
+    console.log(app.globalData.userInfo.avatarUrl)
+    // 获取个人信息
+    this.setData({
+      avatarUrl: app.globalData.userInfo.avatarUrl,
+      name: app.globalData.userInfo.nickName
+    })
   },
 
   /**
